@@ -12,6 +12,9 @@
   <tbody>
     <% @private_messages.each do |private_message| %>
       <tr>
+        <td><%= private_message.id %></td>
+        <td><%= private_message.content%></td>
+        <td><%= private_message.content2%></td>
         <td><%= link_to 'Show', private_message %></td>
         <td><%= link_to 'Edit', edit_private_message_path(private_message) %></td>
         <td><%= link_to 'Destroy', private_message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
