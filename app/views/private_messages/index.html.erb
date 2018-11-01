@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Private Messages</h1>
+<h1>Potins</h1>
 
 <table>
   <thead>
@@ -12,12 +12,27 @@
   <tbody>
     <% @private_messages.each do |private_message| %>
       <tr>
-        <td><%= private_message.id %></td>
-        <td><%= private_message.content%></td>
-        <td><%= private_message.content2%></td>
-        <td><%= link_to 'Show', private_message %></td>
-        <td><%= link_to 'Edit', edit_private_message_path(private_message) %></td>
-        <td><%= link_to 'Destroy', private_message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">potin °         <%= private_message.id %>  </div>
+    <div class="card-body">
+      <h4 class="card-title">
+              <%= private_message.content%>
+              <%= private_message.content2%></h4>
+      <p class="card-text">
+        <%= link_to 'More...', private_message %>
+        <%= link_to 'Edit', edit_private_message_path(private_message) %>
+        <%= link_to 'Delete', private_message, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
       </tr>
     <% end %>
   </tbody>
