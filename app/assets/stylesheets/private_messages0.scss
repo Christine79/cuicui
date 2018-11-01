@@ -1,6 +1,7 @@
-// Place all the styles related to the users controller here.
+// Place all the styles related to the private_messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 /*!
  * Bootswatch v4.1.3
  * Homepage: https://bootswatch.com
@@ -6502,7 +6503,8 @@ button.bg-secondary:focus {
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1f7972 !important;
+  //background-color: #1f7972 !important;
+  background-color: purple !important;
 }
 
 .bg-info {

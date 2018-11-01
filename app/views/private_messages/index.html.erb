@@ -18,12 +18,12 @@
   <p>
 
 
-  <div class="card border-primary mb-3 mr-3" style="max-height:15rem; max-width: 30rem;" >
+  <div class="card border-primary mb-3 mr-3" style="height:13rem; width: 19rem;" >
     <div class="card-header">potin °         <%= private_message.id %>  </div>
     <div class="card-body">
-      <h4 class="card-title">
+      <h8 class="card-title">
               <%= private_message.content%>
-              <%= private_message.content2%></h4>
+              <%= private_message.content2%></h8>
       <p class="card-text">
         <%= link_to 'See more...', private_message %>
         <%= link_to 'Edit', edit_private_message_path(private_message) %>
