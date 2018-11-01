@@ -17,7 +17,7 @@ puts "Users ok"
 
 
 10.times do
- potin = PrivateMessage.create!(content: "#{Faker::Name.name}", content2: "#{Faker::NewGirl.quote}")
+ potin = PrivateMessage.create!(content: "#{Faker::Name.name}", content2: "#{Faker::NewGirl.quote}", anonymous_author: "#{Faker::Name.last_name}")
 end
 
 puts "Potins ok"

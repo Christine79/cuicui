@@ -20,7 +20,13 @@
     <%= form.text_area :content2 %>
   </div>
 
+  <div class="field">
+    <%= form.label :Author %>
+    <%= form.text_area :anonymous_author %>
+  </div>
+
+
   <div class="btn btn-secondary">
-      <%= form.submit "Create"  %>
+      <%= form.submit "Validate"  %>
   </div>
 <% end %>

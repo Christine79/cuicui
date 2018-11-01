@@ -69,6 +69,6 @@ class PrivateMessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def private_message_params
-      params.require(:private_message).permit(:content, :content2)
+      params.require(:private_message).permit(:content, :content2, :anonymous_author)
     end
 end

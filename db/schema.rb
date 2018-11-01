@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_28_134920) do
+ActiveRecord::Schema.define(version: 2018_11_01_160750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_10_28_134920) do
     t.datetime "updated_at", null: false
     t.string "content"
     t.string "content2"
+    t.string "anonymous_author"
   end
 
   create_table "twitts", force: :cascade do |t|

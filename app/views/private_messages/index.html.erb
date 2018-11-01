@@ -23,7 +23,8 @@
     <div class="card-body">
       <h8 class="card-title">
               <%= private_message.content%>
-              <%= private_message.content2%></h8>
+              <%= private_message.content2%>
+              <%= private_message.anonymous_author%></h8>
       <p class="card-text">
         <%= link_to 'See more...', private_message %>
         <%= link_to 'Edit', edit_private_message_path(private_message) %>
