@@ -60,3 +60,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Gemfile Fakler : création de noms à la volée
+gem 'faker'
+
+# Gemfile Fakler : création de noms à la volée (ligne qui remplacera la précédente si prb de version)
+###   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'

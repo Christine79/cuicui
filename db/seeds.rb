@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+puts "lancement seeds Faker"
+
+10.times do
+ user = User.create!(name: "#{Faker::Name.first_name}", content: "#{Faker::Name.middle_name}")
+end
+puts "Users ok"
+
+
+10.times do
+ potin = PrivateMessage.create!(content: "#{Faker::Name.name}", content2: "#{Faker::NewGirl.quote}")
+end
+
+puts "Potins ok"
