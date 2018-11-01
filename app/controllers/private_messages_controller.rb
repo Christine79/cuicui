@@ -28,7 +28,7 @@ class PrivateMessagesController < ApplicationController
 
     respond_to do |format|
       if @private_message.save
-        format.html { redirect_to @private_message, notice: 'Private message was successfully created.' }
+        format.html { redirect_to @private_message, notice: 'Potin successfully created.'  }
         format.json { render :show, status: :created, location: @private_message }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PrivateMessagesController < ApplicationController
   def update
     respond_to do |format|
       if @private_message.update(private_message_params)
-        format.html { redirect_to @private_message, notice: 'Private message was successfully updated.' }
+        format.html { redirect_to @private_message, notice: 'Potin successfully updated.' }
         format.json { render :show, status: :ok, location: @private_message }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PrivateMessagesController < ApplicationController
   def destroy
     @private_message.destroy
     respond_to do |format|
-      format.html { redirect_to private_messages_url, notice: 'Private message was successfully destroyed.' }
+      format.html { redirect_to private_messages_url, notice: 'Potin was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

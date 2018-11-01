@@ -47,7 +47,9 @@ div {
 }
 
 #notice {
-  color: green;
+  color:pink;
+  position: relative;
+  font-size: 200%;
 }
 
 .field_with_errors {
@@ -332,7 +334,7 @@ label {
 }
 
 button {
-  border-radius: 0;
+//  border-radius: 0;
 }
 
 button:focus {
@@ -6574,7 +6576,7 @@ button.bg-primary:focus {
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #697b7d !important;
+//  background-color: #697b7d !important;
 }
 
 .bg-success {
@@ -6584,7 +6586,7 @@ button.bg-secondary:focus {
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1f7972 !important;
+//  background-color: #1f7972 !important;
 }
 
 .bg-info {

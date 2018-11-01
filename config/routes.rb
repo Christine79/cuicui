@@ -10,5 +10,4 @@ Rails.application.routes.draw do
   get '/user/new', to: 'users#new'
   get '/private_message/new', to: 'private_messages#new'
   get '/private_message/create', to: 'private_messages#create'
-
 end
